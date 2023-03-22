@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/blue_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/ramdan"
+    android:scaleType="centerCrop"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+    <ImageView
+        android:id="@+id/ramadan_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/text"
+        app:tint="#FFFDFD"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/stars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/lantern"
+        app:lottie_autoPlay="true"
+        android:scaleType="fitCenter"
+        app:lottie_loop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/stars_celebration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_speed=".85"
+        app:lottie_rawRes="@raw/celebration"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/second_celebration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_speed=".75"
+        app:lottie_rawRes="@raw/second_celebration"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
